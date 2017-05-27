@@ -57,7 +57,7 @@ public class Question1<T> {
 	 * 
 	 * @param tree	tree where the key is searched
 	 * @param key	searched key
-	 * @return 		path to the node with the given key
+	 * @return 	path to the node with the given key
 	 */
 	public static <T> void getPath(BinaryTree<T> tree, T key) {
 		/* Determine the path to the node with the given key */
@@ -79,8 +79,8 @@ public class Question1<T> {
 	 * 
 	 * @param root	the root of the tree where we search for the key
 	 * @param key	searched key
-	 * @return 		true if the key was found in the tree with the given root, 
-	 * 				false otherwise
+	 * @return 	true if the key was found in the tree with the given root, 
+	 * 		false otherwise
 	 */
 	public static <T> boolean determinePath(Node<T> root, T key) {
 		if (root == null) {
