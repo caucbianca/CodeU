@@ -45,8 +45,7 @@ public class Question2<T> {
 		 * EXPECTED OUTPUT: "Lowest common ancestor for 7 and 3 : null" */
 		node1.setKey(7);
 		node2.setKey(3);
-		displayCommonAncestor(tree, node1, node2);
-//		 
+		displayCommonAncestor(tree, node1, node2);		 
 	}
 	
 	public static <T> void displayCommonAncestor(BinaryTree<T> tree, Node first, Node second) {
@@ -71,7 +70,7 @@ public class Question2<T> {
 	 * @param root		the root of the tree 
 	 * @param first		the first node
 	 * @param second	the second node
-	 * @return			the lowest common ancestor / null
+	 * @return		the lowest common ancestor / null
 	 */
 	public static Node commonAncestors(Node root, Node first, Node second) {
 		Node ancestor = null;
@@ -144,7 +143,7 @@ public class Question2<T> {
 	 * @param root		the root of the tree
 	 * @param first		the first node
 	 * @param second	the second node
-	 * @return 			2 if both appears, 1 if only one appears, 0 otherwise
+	 * @return 		2 if both appears, 1 if only one appears, 0 otherwise
 	 */
 	public static int countNodes(Node root, Node first, Node second) {
 		int result = 0;
