@@ -10,8 +10,8 @@ public class WordSearch {
 	 * @param rows			number of rows of the matrix
 	 * @param columns		number of columns of the matrix
 	 * @param matrix		the matrix of letters
-	 * @param dictionary	dictionary which contains a set of words
-	 * @return				the set of words which appear in the dictionary
+	 * @param dictionary		dictionary which contains a set of words
+	 * @return			the set of words which appear in the dictionary
 	 */
 	public static TreeSet<String> findWords(int rows, int columns, char[][] matrix,
 			MyDictionary dictionary) {
@@ -35,13 +35,13 @@ public class WordSearch {
 	/**
 	 * Apply the depth first search algorithm in order to find words which appear in dictionary
 	 * 
-	 * @param x					the row of the starting point
-	 * @param y					the column of the starting point
-	 * @param matrix			matrix of letters
+	 * @param x			the row of the starting point
+	 * @param y			the column of the starting point
+	 * @param matrix		matrix of letters
 	 * @param dictionary		dictionary with accepted words
-	 * @param visited			show which letters were used
+	 * @param visited		shows which letters were used
 	 * @param previousWord		the word obtained in the previous step
-	 * @param words				the set of words found in the matrix which appear in dictionary
+	 * @param words			the set of words found in the matrix which appear in dictionary
 	 */
 	public static void depthFirstSearch(int x, int y, char[][] matrix, MyDictionary dictionary,
 			boolean[][] visited, String previousWord, TreeSet<String> words) {
