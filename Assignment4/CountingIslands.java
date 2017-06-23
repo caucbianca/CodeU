@@ -9,7 +9,7 @@ public class CountingIslands {
 	 * Determine the number of islands in the matrix
 	 * 
 	 * @param matrix	a matrix with boolean elements (true = land, false = water)
-	 * @return 			the number of islands
+	 * @return 		the number of islands
 	 */
 	public static int getNumberOfIslands(boolean[][] matrix) {
 		int islandID = 0;
@@ -29,16 +29,13 @@ public class CountingIslands {
 		for (i = 0; i < rows; i++) {
 			for (j = 0; j < columns; j++) {
 				if (matrix[i][j] == true) {
-					 /* Check if the tile to the left and the tile from above are
-					 * land */
+					 /* Check if the tile to the left and from above are both land */
 					boolean checkAbove = i > 0 && matrix[i - 1][j] == true;
 					boolean checkLeft = j > 0 && matrix[i][j - 1] == true;
 
-					 /* The tile from above is land, so both are part of the same
-					 * island */
+					 /* The tile from above is land, so both are part of the same island */
 					if (checkAbove == true) {
-						 /* Determine the island where the current tile belongs
-						 * to */
+						 /* Determine the island where the current tile belongs to */
 						indexIsland = parentIsland[i - 1][j];
 						islandAbove = islands.get(indexIsland);
 
@@ -49,11 +46,9 @@ public class CountingIslands {
 						parentIsland[i][j] = indexIsland;
 					}
 
-					 /* The tile to the left is land, so both are part of the
-					 * same island */
+					 /* The tile to the left is land, so both are part of the same island */
 					if (checkLeft == true) {
-						 /* Determine the island where the current tile belongs
-						 * to */
+						 /* Determine the island where the current tile belongs to */
 						indexIsland = parentIsland[i][j - 1];
 						islandLeft = islands.get(indexIsland);
 
